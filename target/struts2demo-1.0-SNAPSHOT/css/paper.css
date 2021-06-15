@@ -1,0 +1,113 @@
+.paper01
+{
+    border: 1px solid #000;
+}
+
+.paper01 p
+{
+    font-size: 40px;
+}
+
+.paper01 span
+{
+    margin: 5px;
+}
+
+.editing
+{
+    width: 280px;
+}
+
+.paper02 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+
+.paper02 table td
+{
+    border:1px solid black
+}
+
+#paperAuditTitle
+{
+    font-size: 40px;
+}
+
+#paperAuditList
+{
+    font-size: 25px; 
+}
+
+.paper02 span
+{
+    margin: 10px 10px;
+}
+
+.paper02detail
+{
+    border: 1px solid #000;
+}
+
+.paper02btn
+{
+    margin: 10px 10px;
+}
+.paper02btn span
+{
+    margin: 10px;
+}
+
+#paperReleaseList1
+{
+    font-size: 40px;
+}
+#paperReleaseList
+{
+    font-size: 25px;
+}
+
+.paper03 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+
+.paper03 table td
+{
+    border:1px solid black;
+}
+
+.paper03 span
+{
+    margin: 10px 10px;
+}
+
+.paper04 span
+{
+    margin: 10px 10px;
+}
+
+.paper04 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+
+.paper04 table td
+{
+    border:1px solid black;
+}
+
+#paperDeleteList1
+{
+    font-size: 40px;
+}
+
+#paperDeleteList
+{
+    font-size: 25px; 
+}

@@ -1,0 +1,123 @@
+.news01
+{
+    border: 1px solid #000;
+}
+
+.news01 p
+{
+    font-size: 40px;
+}
+
+.news01 span
+{
+    margin: 5px;
+}
+
+.editing
+{
+    width: 280px;
+}
+
+.news02 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+
+.news02 table td
+{
+    border:1px solid black
+}
+
+#newsAuditTitle
+{
+    font-size: 40px;
+}
+
+#newsAuditList
+{
+    font-size: 25px; 
+}
+
+
+.news02 p
+{
+    font-size: 40px;
+}
+.news02 span
+{
+    margin: 10px 10px;
+}
+
+#newsRelease1
+{
+    font-size: 40px;
+}
+#newsReleaseList
+{
+    font-size: 25px;
+}
+
+.news02detail
+{
+    border: 1px solid #000;
+}
+
+.news02btn
+{
+    margin: 10px 10px;
+}
+.news02btn span
+{
+    margin: 10px;
+}
+
+.news03 p
+{
+    font-size: 40px;
+}
+
+.news03 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+
+.news03 table td
+{
+    border:1px solid black;
+}
+
+.news03 span
+{
+    margin: 10px 10px;
+}
+
+.news04 span
+{
+    margin: 10px 10px;
+}
+
+.news04 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+
+.news04 table td
+{
+    border:1px solid black;
+}
+
+#newsDelete1
+{
+    font-size: 40px;
+}
+
+#newsDeleteList
+{
+    font-size: 25px; 
+}

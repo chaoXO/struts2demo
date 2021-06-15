@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+<!--    设置struts2主题样式为simple   -->
+    <constant name="struts.ui.theme" value="simple"/>
+<!--    设置配置文件及时编译-->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+<!--    解决中文乱码-->
+    <constant name="struts.i18h.encoding" value="UTF-8"/>
+<!--    开启动态方法调用-->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+
+<!--    设置开发模式-->
+    <constant name="struts.devMode" value="true"/>
+<!--    配置上传文件大小限制-->
+    <constant name="struts.multipart.maxsize" value="52428800"/>
+
+
+
+    
+    <!--package.name可以随意，extends不能修改-->
+    <package name="login" extends="struts-default">
+        <!--        定义拦截器-->
+        <interceptors>
+            <interceptor name="test1" class="com.example.interceptor.Interceptor1"/>
+        </interceptors>
+        
+        <!--            引用默认的Action         -->
+        <default-action-ref name="defaultAction"/>
+        <!--        设置动态方法的白名单          -->
+        <global-allowed-methods>regex:.*</global-allowed-methods>
+        <!--         设置默认的Action页面        -->
+        <action name="defaultAction">
+            <result>/404.jsp</result>
+        </action>
+
+        <!--action的name随意，但class必须是Action类的路径-->
+        <action name="helloWorld" class="com.example.struts2demo.HelloAction">
+            <!--result的name为Action类返回的值-->
+            <result name="success">/success.jsp</result>
+        </action>
+        <!--        默认使用转发跳转页面，重定向：type = "redirect"       -->
+        <action name="login" class="com.example.action.LoginAction">
+            <result name="ok">/html/home.jsp</result>
+            <!--            验证跳转回去          -->
+            <result name="input">/9login.jsp</result>
+            <!--            引用拦截器-->
+            <interceptor-ref name="test1"/>
+            <!--            引用默认的拦截器-->
+            <interceptor-ref name="defaultStack"/>
+        </action>
+
+        <action name="register" class="com.example.action.RegisterAction">
+            <result name="register">/8register.jsp</result>
+            <result name="ok">/9login.jsp</result>
+            <result name="input">/8register.jsp</result>
+            <!--            <result type="redirectAction">xxx.action</result>     跳转到不同的控制器-->
+        </action>
+    </package>
+    
+
+    <package name="news" extends="struts-default">
+        <!--        设置动态方法的白名单          -->
+        <global-allowed-methods>regex:.*</global-allowed-methods>
+
+        <action name="news"  class="com.example.action.NewsAction">
+            <result name="input">/html/news01.jsp</result>
+            <result name="success">/html/home.jsp</result>
+
+            <result name="check">/html/news02.jsp</result>
+
+            <result name="checkpass">/html/news03.jsp</result>
+            <result name="checknotpass">/html/news04.jsp</result>
+
+            <result name="pass">/html/news02.jsp</result>
+            <result name="notpass">/html/news02.jsp</result>
+            <result name="notPassAgain">/html/news03.jsp</result>
+            <result name="PassAgain">/html/news04.jsp</result>
+
+        </action>
+    </package>
+
+    <package name="essay" extends="struts-default">
+        <!--        设置动态方法的白名单          -->
+        <global-allowed-methods>regex:.*</global-allowed-methods>
+
+        <action name="essay" class="com.example.action.EssayAction">
+            <result name="input">/html/paper01.jsp</result>
+            <result name="success">/html/home.jsp</result>
+
+            <result name="check">/html/paper02.jsp</result>
+            <result name="checkpass">/html/paper03.jsp</result>
+            <result name="checknotpass">/html/paper04.jsp</result>
+
+            <result name="pass">/html/paper02.jsp</result>
+            <result name="notpass">/html/paper02.jsp</result>
+
+            <result name="notpassAgain">/html/paper03.jsp</result>
+            <result name="passAgain">/html/paper04.jsp</result>
+        </action>
+    </package>
+
+    <package name="member" extends="struts-default">
+        <!--        设置动态方法的白名单          -->
+        <global-allowed-methods>regex:.*</global-allowed-methods>
+
+        <action name="member" class="com.example.action.MemberAction">
+            <result name="input">/html/team01.jsp</result>
+            <result name="success">/html/home.jsp</result>
+
+            <result name="check">/html/team03.jsp</result>
+            <result name="checkhide">/html/team05.jsp</result>
+
+            <result name="hide">/html/team03.jsp</result>
+            <result name="present">/html/team05.jsp</result>
+        </action>
+    </package>
+
+
+
+    <package name="project" extends="struts-default">
+        <!--        设置动态方法的白名单          -->
+        <global-allowed-methods>regex:.*</global-allowed-methods>
+
+        <action name="project" class="com.example.action.ProjectAction">
+            <result name="input">/html/project01.jsp</result>
+            <result name="success">/html/home.jsp</result>
+
+            <result name="check">/html/project02.jsp</result>
+            <result name="pass">/html/project02.jsp</result>
+            <result name="notpass">/html/project02.jsp</result>
+
+            <result name="notpassAgain">/html/project03.jsp</result>
+            <result name="passAgain">/html/project04.jsp</result>
+
+        </action>
+    </package>
+
+    <package name="show" extends="struts-default">
+        <!--        设置动态方法的白名单          -->
+        <global-allowed-methods>regex:.*</global-allowed-methods>
+
+        <action name="show" class="com.example.action.ShowAction">
+            <result name="success">/2news.jsp</result>
+            <result name="showPaper">/7essay.jsp</result>
+        </action>
+    </package>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+        package标签：该配置访问的包范围
+        name属性：自定义，必须唯一，区分package
+        extends属性:继承某个package，structs-default是核心必须继承
+        namespace属性：命名空间，默认为/（根目录） 类似于上级目录
+        -->
+    <!--
+        action：配置访问请求
+        name:访问路径
+        class：访问该路径要执行的控制器
+        result：配置返回的页面
+            name：属性值可以自定义，必须和控制器返回的逻辑字符串保持一致
+        -->
+
+
+</struts>

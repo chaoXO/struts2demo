@@ -1,0 +1,120 @@
+.home01
+{
+    border: 1px solid #000;
+}
+
+.home01 p
+{
+    font-size: 40px;
+}
+
+.editing
+{
+ display: inline-block;   
+ width: 300px;
+}
+
+.menu
+{
+  width: 193px;
+  display: inline-block;
+  vertical-align: top;
+  border-right: 1px solid white;
+}
+
+.mainmenu
+{
+  display: block;
+  width: 193px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  background-color: rgb(88, 88, 131);
+  font-family: 黑体;
+  font-size: 12pt;
+  padding: 5pt;
+  border: 1px solid white;
+}
+
+.menu .sub
+{
+  position: absolute;
+  z-index: 999;
+  width: 190px;
+}
+
+.menu .sub a
+{
+  display: block;
+  width: 185px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color:rgb(76, 76, 92);
+  font-family: 黑体;
+  font-size: 11pt;
+  padding :5pt;
+  border: 1px solid white;
+}
+
+.menu .sub a:hover
+{
+  display: block;
+  width: 185px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(235, 83, 23);
+  font-family: 黑体;
+  font-size: 11pt;
+  padding :5pt;
+  border: 1px solid white;
+}
+
+.home02 p
+{
+    font-size: 40px;
+}
+
+.home02 span
+{
+  margin: 30px;
+}
+
+.home03 span
+{
+  margin: 30px;
+}
+
+.home04 span
+{
+  margin: 30px;
+}
+
+.home05 span
+{
+  margin: 30px;
+}
+
+.home02 p
+{
+    font-size: 40px;
+}
+
+.home03 p
+{
+    font-size: 40px;
+}
+
+.home04 p
+{
+    font-size: 40px;
+}
+
+.home05 p
+{
+    font-size: 40px;
+}

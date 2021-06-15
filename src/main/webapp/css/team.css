@@ -1,0 +1,107 @@
+#memberList
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;;
+}
+
+#memberList td
+{
+    border:1px solid black;
+    width: 100px;
+    height: 20px;
+}
+
+#memberList input
+{
+    border:0px;
+    height: 20px;
+}
+
+#personList
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+
+#personList td
+{
+    border:1px solid black;
+    width: 100px;
+    height: 20px;
+}
+
+#personList input
+{
+    border:0px;
+    height: 20px;
+}
+
+.team03 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+.team03 table td
+{
+    border:1px solid black;
+    width: 100px;
+}
+
+.team03 button
+{
+    margin: 10px;
+}
+
+.team04 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+.team04 table td
+{
+    border:1px solid black;
+    width: 100px;
+}
+
+.team04 button
+{
+    margin: 10px;
+}
+
+.team05 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+.team05 table td
+{
+    border:1px solid black;
+    width: 100px;
+}
+
+.team05 button
+{
+    margin: 10px;
+}
+
+.team06 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+.team06 table td
+{
+    border:1px solid black;
+    width: 100px;
+}
+
+.team06 button
+{
+    margin: 10px;
+}

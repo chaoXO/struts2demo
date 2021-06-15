@@ -1,0 +1,104 @@
+.project01
+{
+    border: 1px solid #000;
+}
+
+.project01 p
+{
+    font-size: 40px;
+}
+
+.project01 span
+{
+    margin: 5px;
+}
+
+.editing
+{
+    width: 280px;
+}
+
+.project02 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+
+.project02 table td
+{
+    border:1px solid black
+}
+
+#projectAuditTitle
+{
+    font-size: 40px;
+}
+
+#projectAuditList
+{
+    font-size: 25px; 
+}
+
+.project02 span
+{
+    margin: 10px 10px;
+}
+
+.project02detail
+{
+    border: 1px solid #000;
+}
+
+.project02btn
+{
+    margin: 10px 10px;
+}
+.project02btn span
+{
+    margin: 10px;
+}
+
+.project03 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+
+.project03 table td
+{
+    border:1px solid black;
+}
+
+.project03 span
+{
+    margin: 10px 10px
+}
+
+.project04 span
+{
+    margin: 10px 10px;
+}
+
+.project04 table
+{
+    border:1px solid black;
+    margin:8px;
+    border-spacing:0;
+}
+
+.project04 table td
+{
+    border:1px solid black;
+}
+
+#projectDeleteList1
+{
+    font-size: 40px;
+}
+
+#projectDeleteList
+{
+    font-size: 25px;
+}
